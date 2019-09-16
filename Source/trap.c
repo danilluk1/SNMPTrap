@@ -29,11 +29,11 @@ void formSNMPTrap(uint8_t val) {
 		snmp_message[0], snmp_message[1], version[0], version[1], version[2], comm_string[0], comm_string[1], comm_string[2],
 		comm_string[3],comm_string[4], comm_string[5], comm_string[6], comm_string[7], pdu_type[0], pdu_type[1],
 		request_id[0], request_id[1], request_id[2], error_status[0], error_status[1], error_status[2],
-		error_index[0],error_index[1], error_index[2], var_list[0], var_list[1], var_bind[0], var_bind[1],
-		oid[0], oid[1], oid[2], oid[3], oid[4], oid[5],oid[6], oid[7], oid[8], oid[9], oid[10], oid[11], oid[12],
-		value[0], value[1], value[2], var_bindT[0], var_bindT[1],
+		error_index[0],error_index[1], error_index[2], var_list[0], var_list[1], var_bindT[0], var_bindT[1],
 		timetick_oid[0], timetick_oid[1], timetick_oid[2], timetick_oid[3], timetick_oid[4], timetick_oid[5], timetick_oid[6],
-		timetick_oid[7], timetick_oid[8], timetick_oid[9], sysUpTime[0], sysUpTime[1], sysUpTime[2], sysUpTime[3]
+		timetick_oid[7], timetick_oid[8], timetick_oid[9], sysUpTime[0], sysUpTime[1], sysUpTime[2], sysUpTime[3], var_bind[0], var_bind[1],
+		oid[0], oid[1], oid[2], oid[3], oid[4], oid[5],oid[6], oid[7], oid[8], oid[9], oid[10], oid[11], oid[12],
+		value[0], value[1], value[2]
 	};
 	#pragma endregion
 	uint8_t length = (uint8_t)(sizeof(packet_bytes) / sizeof(packet_bytes[0]));
