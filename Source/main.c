@@ -6,7 +6,7 @@
 uint8_t len;
 uint8_t packet[] = { 0 };
 
-void s(uint8_t* buff, uint8_t *length) {
+void sendPacket(uint8_t* buff, uint8_t *length) {
 	const char* IP = "127.0.0.1";
 	const u_short PORT = 162;
 	WSADATA wsdata;
@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
 
 	selectSendingValue(val);
 	sendSNMPTrap(&packet, &len);
-	s(&packet, &len);
+	sendPacket(&packet, &len);
 
 	return 0;
 }
