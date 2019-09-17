@@ -28,7 +28,6 @@ int main(int argc, char** argv) {
 
 	selectSendingValue(val);
 	sendSNMPTrap(&packet, &len);
-	printf("%d", len);
 	s(&packet, &len);
 
 	return 0;
